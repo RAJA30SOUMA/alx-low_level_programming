@@ -1,33 +1,32 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
- * main - Prints numbers between 00 to 99.
- *
+ * main - Entry point
  * Return: Always 0 (Success)
  */
+
 int main(void)
+
 {
-	int i, e;
+	int d, p;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (d = '0'; d < '9'; d++)
 	{
-		i = 48;
-		while (i < 58)
-		{
-			putchar(e);
-			putchar(i);
-			if (i == 57 && e == 57)
-			{
-				break;
-			}
-			putchar(',');
-			putchar(' ');
-			i++;
-		}
-		e++;
+
+	for (p = d + 1; p <= '9'; p++)
+	{
+	if (p != d)
+	{
+	putchar(d);
+	putchar(p);
+	if (d == '8' && p == '9')
+	continue;
+	putchar(',');
+	putchar(' ');
+	}
+	}
 	}
 	putchar('\n');
 	return (0);
