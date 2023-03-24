@@ -22,18 +22,18 @@ void print_number(int n)
 
 		while (t_beg <= positive)
 			t_beg *= 10;
-		tens = t_beg / 10;
+			tens = t_beg / 10;
 
-		while (tens >= 1)
+			while (tens >= 1)
 		{
 			digit = positive / tens;
-			_putchar(digit + '0');
-			positive = (positive - (tens * digit));
+		        _putchar(digit + '0');
+ 			positive = (positive - (tens * digit));
 			tens /= 10;
 		}
-	}
+		 
+        }
 }
-
 
 
 
